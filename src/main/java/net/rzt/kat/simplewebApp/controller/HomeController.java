@@ -18,6 +18,10 @@ public class HomeController {
 	@RequestMapping(value="/notification")
 	public ModelAndView notification(HttpServletResponse request , HttpServletResponse response) throws IOException{
 		System.out.println("request came");
-		return new ModelAndView("home");
+		
+		
+		ModelAndView mv =new ModelAndView("notified");
+		mv.addObject("details", "ok ");
+		return mv;
 	}
 }
