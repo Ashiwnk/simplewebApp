@@ -209,6 +209,14 @@ public class HomeController {
 		mv.addObject("details", "ok ");
 		return mv;
 	}
+	
+	@RequestMapping(value = "/googlebab8ecfd012e8736.html")
+	public ModelAndView googleCheck(HttpServletResponse request,
+			HttpServletResponse response) throws IOException {
+
+		ModelAndView mv = new ModelAndView("googlebab8ecfd012e8736");
+		return mv;
+	}
 
 	@RequestMapping(value = "/dochanges")
 	public ModelAndView dochanges(HttpServletResponse request,
