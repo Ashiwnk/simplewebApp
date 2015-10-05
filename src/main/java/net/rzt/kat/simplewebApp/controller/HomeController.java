@@ -193,10 +193,8 @@ public class HomeController {
 	@RequestMapping(value = "/notification")
 	public ModelAndView notification(HttpServletResponse request,
 			HttpServletResponse response) throws IOException {
-		System.out.println("request came");
-		CalendarSample cs = new CalendarSample();
-		ModelAndView mv = new ModelAndView("notified");
-		mv.addObject("details", cs.getCalendars());
+		System.out.println("request came for notification to pull the chages");
+		ModelAndView mv = new ModelAndView("notification");
 		return mv;
 	}
 	
