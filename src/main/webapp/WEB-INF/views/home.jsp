@@ -3,6 +3,10 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
+<head>
+<meta name="google-site-verification" content="syJaHQq2A5jITHKwCauYB4Ss3bpjOCTjTDilIBAWnrA" />
+<title> My title </title>
+</head> 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Home</title>
