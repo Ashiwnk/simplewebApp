@@ -16,7 +16,6 @@ import com.google.api.client.util.store.DataStoreFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.calendar.model.Calendar;
 import com.google.api.services.calendar.model.CalendarList;
-import com.google.api.services.calendar.model.Channel;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.EventDateTime;
 import com.google.api.services.calendar.model.Events;
@@ -100,15 +99,8 @@ public class CalendarSample {
 	public void showCalendars() throws IOException {
 		View.header("Show Calendars");
 		CalendarList feed = client.calendarList().list().execute();
-		Channel channel = new Channel();
-	      channel.setId("01234567-89ab-cdef-0123456789ab");
-	      channel.setType("web_hook");
-	      channel.setAddress("https://ashwin.ind-cloud.everdata.com/");
-	      channel.setToken("ya29.AQJRFvGaEE3JUOuEEEiaMjDzdzm-DDSDg-0huVoQH2NeSuEDeBF841zvN_y32Y2c49VE");
-	      System.out.println("1"+client.calendarList());
-	      //System.out.println("2"+client.calendar);
-	      System.out.println("3"+client.calendarList().watch(channel));
-	      client.calendarList().watch(channel).execute();
+		System.out.println("Calendars --- >" + client.calendars());
+		System.out.println("feed" + feed.toPrettyString());
 		View.display(feed);
 	}
 
