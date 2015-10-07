@@ -206,7 +206,7 @@ public class HomeController {
 	public ModelAndView notification(HttpServletResponse request,
 			HttpServletResponse response) throws IOException {
 		System.out.println("request came for notification to pull the chages");
-		ModelAndView mv = new ModelAndView("notification");
+		ModelAndView mv = new ModelAndView("notificationPage");
 		return mv;
 	}
 
